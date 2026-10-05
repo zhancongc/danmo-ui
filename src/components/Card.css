@@ -1,0 +1,19 @@
+.dm-card {
+  background: var(--dm-white);
+  border: 1px solid var(--dm-light);
+  border-radius: var(--dm-radius-card);
+  box-shadow: var(--dm-shadow);
+  font-family: var(--dm-font);
+}
+
+.dm-card--md {
+  padding: 1.25rem;
+}
+
+.dm-card--sm {
+  padding: 0.85rem;
+}
+
+.dm-card--none {
+  padding: 0;
+}

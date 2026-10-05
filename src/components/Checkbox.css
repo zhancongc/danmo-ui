@@ -1,0 +1,25 @@
+.dm-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--dm-font);
+  font-size: 0.88rem;
+  color: var(--dm-charcoal);
+  cursor: pointer;
+  user-select: none;
+}
+
+.dm-checkbox input[type="checkbox"] {
+  accent-color: var(--dm-red);
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.dm-checkbox input:disabled {
+  cursor: not-allowed;
+}
+
+.dm-checkbox input:disabled + .dm-checkbox__label {
+  opacity: 0.55;
+}

@@ -1,0 +1,77 @@
+.dm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  font-family: var(--dm-font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: var(--dm-radius);
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.dm-btn--md {
+  padding: 0.55rem 1.25rem;
+}
+
+.dm-btn--sm {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+.dm-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dm-btn--primary {
+  background: var(--dm-red);
+  color: var(--dm-white);
+  border: none;
+  box-shadow: var(--dm-shadow);
+}
+
+.dm-btn--primary:hover:not(:disabled) {
+  background: var(--dm-red-dark);
+}
+
+.dm-btn--secondary {
+  background: var(--dm-white);
+  color: var(--dm-red);
+  border: 1px solid var(--dm-red);
+  padding-inline: 1.1rem;
+}
+
+.dm-btn--secondary:hover:not(:disabled) {
+  background: var(--dm-red-light);
+}
+
+.dm-btn--tertiary {
+  background: transparent;
+  color: var(--dm-text);
+  border: none;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.875rem;
+}
+
+.dm-btn--tertiary:hover:not(:disabled) {
+  color: var(--dm-charcoal);
+  background: rgba(243, 244, 246, 0.8);
+}
+
+.dm-btn__spinner {
+  width: 0.9em;
+  height: 0.9em;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: dm-spin 0.7s linear infinite;
+}
+
+@keyframes dm-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

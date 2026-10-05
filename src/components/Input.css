@@ -1,0 +1,54 @@
+.dm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-family: var(--dm-font);
+}
+
+.dm-field__label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--dm-charcoal);
+}
+
+.dm-field__control {
+  font-family: var(--dm-font);
+  font-size: 0.9rem;
+  color: var(--dm-ink);
+  background: var(--dm-white);
+  border: 1px solid var(--dm-light);
+  border-radius: var(--dm-radius);
+  padding: 0.55rem 0.75rem;
+  outline: none;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+
+.dm-field__control:focus {
+  border-color: var(--dm-red);
+}
+
+.dm-field__control:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.dm-field--error .dm-field__control {
+  border-color: var(--dm-red);
+  background: var(--dm-red-light);
+}
+
+.dm-field__error {
+  font-size: 0.78rem;
+  color: var(--dm-red-dark);
+}
+
+.dm-field__hint {
+  font-size: 0.78rem;
+  color: var(--dm-text);
+}
+
+select.dm-field__control,
+textarea.dm-field__control {
+  height: auto;
+}
